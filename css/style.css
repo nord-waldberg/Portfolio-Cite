@@ -346,7 +346,7 @@ header .header-logotypes__image {
         -ms-flex-pack: center;
             justify-content: center;
     height: 100%;
-    width: 35%;
+    width: 28%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.3);
   }
