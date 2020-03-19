@@ -1,0 +1,50 @@
+@media (min-width: 380px) {
+    header {
+      padding-left: 30px;
+      .header-logotypes__image {
+        width: 180px; 
+        height: 60px;
+      }
+    }
+  
+    .main-screen {
+      .main-screen__wrapper {
+        .main-screen__text-photo-wrap { 
+          .main-screen__text {
+            padding-top: 10px;
+            padding-bottom: 25px;
+            .main-screen__text-wrap {
+              padding-left: 25px;
+              .main-screen__name-surname {
+                font-size: 2.8em;
+              }
+              .main-screen__profession {
+                font-size: 1.5em;
+              }
+            }
+          }
+        }
+        .social-links__list {
+          padding-left: 25px; 
+          .social-links__icon {
+            width: 45px;
+            height: 45px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .common-block {
+      .common-block__item {
+        padding: 30px;
+      } 
+    }
+    .footer-logotypes {
+      margin-left: 40px;
+      margin-right: 40px;
+      .footer-logotypes__image {
+        width: 70px;
+        height: 50px;
+      }
+    }
+  }

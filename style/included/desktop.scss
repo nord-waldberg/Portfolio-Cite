@@ -1,0 +1,102 @@
+@media (min-width: 1024px) {
+    header {
+      padding-left: 40px;
+      .header-logotypes__image {
+        width: 200px;
+        height: 60px;
+      }
+    }
+  
+    .main-screen {
+      width: 100%;
+      .main-screen__wrapper {
+        width: 100%;
+        height: 100%;
+        .main-screen__text-photo-wrap {
+          position: relative;
+          width: 100%;
+          height: 85%;
+          display: flex;
+          flex-direction: column;
+          .main-screen__photo {
+            height: 100%;
+            .main-screen__portrait {
+              height: 100%;
+            }
+          }
+          .main-screen__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 28%;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.3);
+            .main-screen__text-wrap {
+              width: 100%;
+              .main-screen__name-surname {
+                font-size: 4.5vw;
+              }
+              .main-screen__profession {
+                width: 80%;
+                font-size: 2.5vw;
+              }
+            }
+          }
+        }
+        .main-screen__social-links {
+          width: 100%;
+          height: 15%;
+          padding-left: 30px;
+          margin-top: 0px;
+          .social-links__list {
+            .social-links__link {}
+            .social-links__icon {
+              width: 55px;
+              height: 55px;
+            }
+          }
+        }
+      }
+    }
+    .common-block {
+      
+      padding-top: 20px;
+      .common-block__item {
+        padding: 40px;
+        .common-block__title {
+          font-size: 1.7em;
+          margin-bottom: 20px;
+          margin-left: 60px;
+        }
+        .common-block__text {
+          padding-left: 35px;
+          font-size: 1.2em;
+          margin-top: 30px;
+        }
+        .common-block__list {
+          font-size: 1.6em;
+          padding-left: 35px;
+          .skill-list {
+            .skill-list_item {
+              line-height: 35px;
+            }
+          }
+          .hobbies-list {
+            margin-bottom: 20px;
+            .hobbies-list_item {
+              line-height: 35px;
+            }
+          }
+        }
+      }
+    }
+    .footer-logotypes {
+      margin-left: 80px;
+      margin-right: 80px;
+      .footer-logotypes__image {
+        width: 80px;
+        height: 70px;
+      }
+    }
+  }

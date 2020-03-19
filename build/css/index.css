@@ -22,12 +22,12 @@ a {
 }
 
 .background-red {
-  background-image: url(/css/pictures/gray_line.svg);
+  background-image: url(/build/resources/svg/gray_line.svg);
   background-repeat: no-repeat;
 }
 
 .background-grey {
-  background-image: url(/css/pictures/red_line.svg);
+  background-image: url(/build/resources/svg/red_line.svg);
   background-repeat: no-repeat;
 }
 
@@ -73,37 +73,43 @@ header .header-logotypes__image {
 }
 
 .main-screen .main-screen__wrapper .main-screen__text-photo-wrap {
-  position: relative;
+  height: 85%;
+}
+
+.main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__photo {
+  height: 60%;
 }
 
 .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__photo .main-screen__portrait {
+  height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
 }
 
 .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text {
+  height: 40%;
   padding-left: 20px;
 }
 
 .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__text-wrap .main-screen__name-surname {
-  width: 50%;
+  display: table;
   font-family: "Roboto Slab", serif;
   font-weight: bold;
   font-size: 2.3em;
   padding-bottom: 10px;
   padding-top: 15px;
+  border-bottom: 2px solid white;
 }
 
 .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__text-wrap .main-screen__profession {
-  width: 50%;
+  display: table;
   font-size: 1.2em;
-  border-top: 2px solid white;
   padding-top: 10px;
 }
 
 .main-screen .main-screen__wrapper .main-screen__social-links {
+  height: 15%;
   padding-left: 20px;
   margin-top: 10px;
   display: -webkit-box;
@@ -183,56 +189,56 @@ header .header-logotypes__image {
 }
 
 .common-block .common-block__item .common-block__list .skill-list #html {
-  background-image: url(/css/Icons/HTML.svg);
+  background-image: url(/build/resources/svg/HTML.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
 }
 
 .common-block .common-block__item .common-block__list .skill-list #css {
-  background-image: url(/css/Icons/CSS.svg);
+  background-image: url(/build/resources/svg/CSS.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
 }
 
 .common-block .common-block__item .common-block__list .skill-list #javascript {
-  background-image: url(/css/Icons/JS.svg);
+  background-image: url(/build/resources/svg/JS.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
 }
 
 .common-block .common-block__item .common-block__list .skill-list #sass {
-  background-image: url(/css/Icons/Sass.svg);
+  background-image: url(/build/resources/svg/Sass.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
 }
 
 .common-block .common-block__item .common-block__list .skill-list #photoshop {
-  background-image: url(/css/Icons/Ps.svg);
+  background-image: url(/build/resources/svg/Ps.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
 }
 
 .common-block .common-block__item .common-block__list .skill-list #illustrator {
-  background-image: url(/css/Icons/Ai.svg);
+  background-image: url(/build/resources/svg/Ai.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
 }
 
 .common-block .common-block__item .common-block__list .skill-list #lightroom {
-  background-image: url(/css/Icons/Lr.svg);
+  background-image: url(/build/resources/svg/Lr.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
 }
 
 .common-block .common-block__item .common-block__list .skill-list #figma {
-  background-image: url(/css/Icons/Figma.svg);
+  background-image: url(/build/resources/svg/Figma.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
@@ -256,7 +262,7 @@ header .header-logotypes__image {
   height: 50px;
 }
 
-@media (min-width: 370px) {
+@media (min-width: 380px) {
   header {
     padding-left: 30px;
   }
@@ -265,23 +271,20 @@ header .header-logotypes__image {
     height: 60px;
   }
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text {
-    padding-left: 30px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 25px;
   }
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__text-wrap {
-    width: 250px;
+    padding-left: 25px;
   }
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__text-wrap .main-screen__name-surname {
-    width: 100%;
-    font-size: 2.7em;
+    font-size: 2.8em;
   }
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__text-wrap .main-screen__profession {
-    width: 90%;
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
   .main-screen .main-screen__wrapper .social-links__list {
-    padding-left: 15px;
+    padding-left: 25px;
   }
   .main-screen .main-screen__wrapper .social-links__list .social-links__icon {
     width: 45px;
@@ -317,8 +320,9 @@ header .header-logotypes__image {
     height: 100%;
   }
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap {
-    height: 85%;
+    position: relative;
     width: 100%;
+    height: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -326,6 +330,12 @@ header .header-logotypes__image {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__photo {
+    height: 100%;
+  }
+  .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__photo .main-screen__portrait {
+    height: 100%;
   }
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text {
     display: -webkit-box;
@@ -338,8 +348,8 @@ header .header-logotypes__image {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 100%;
     width: 28%;
+    height: 100%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.3);
   }
@@ -354,17 +364,16 @@ header .header-logotypes__image {
     font-size: 2.5vw;
   }
   .main-screen .main-screen__wrapper .main-screen__social-links {
-    height: 15%;
     width: 100%;
+    height: 15%;
     padding-left: 30px;
     margin-top: 0px;
   }
   .main-screen .main-screen__wrapper .main-screen__social-links .social-links__list .social-links__icon {
-    width: 3.7vw;
-    height: 3.7vw;
+    width: 55px;
+    height: 55px;
   }
   .common-block {
-    padding: 80px;
     padding-top: 20px;
   }
   .common-block .common-block__item {
@@ -373,15 +382,16 @@ header .header-logotypes__image {
   .common-block .common-block__item .common-block__title {
     font-size: 1.7em;
     margin-bottom: 20px;
+    margin-left: 60px;
   }
   .common-block .common-block__item .common-block__text {
-    padding-left: 60px;
+    padding-left: 35px;
     font-size: 1.2em;
     margin-top: 30px;
   }
   .common-block .common-block__item .common-block__list {
     font-size: 1.6em;
-    padding-left: 60px;
+    padding-left: 35px;
   }
   .common-block .common-block__item .common-block__list .skill-list .skill-list_item {
     line-height: 35px;
