@@ -21,22 +21,22 @@ a {
           box-sizing: border-box;
 }
 
-.background-left {
-  background-image: url("/css/pictures/backgroundshiski__left.svg");
+.background-red {
+  background-image: url(/css/pictures/gray_line.svg);
   background-repeat: no-repeat;
-  background-size: 60%;
-  background-position: left;
 }
 
-.background-right {
-  background-image: url("/css/pictures/backgroundshiski__right.svg");
-  background-size: 60%;
+.background-grey {
+  background-image: url(/css/pictures/red_line.svg);
   background-repeat: no-repeat;
-  background-position: right;
+}
+
+.submain-color-contain {
+  background-color: #4A000A;
 }
 
 body {
-  font-family: "Zilla Slab", serif;
+  font-family: "Roboto Slab", serif;
   font-size: 100%;
   background-color: #121312;
   color: white;
@@ -44,27 +44,36 @@ body {
 
 header {
   width: 100%;
-  height: 60px;
+  height: 10vh;
   padding-left: 20px;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .header-logotypes__image {
-  width: 100px;
+  width: 150px;
   height: 60px;
 }
 
 .main-screen {
   width: 100%;
-  background-position: 100% 120px;
+  height: 90vh;
+}
+
+.main-screen .main-screen__wrapper {
+  height: 100%;
 }
 
 .main-screen .main-screen__wrapper .main-screen__text-photo-wrap {
   position: relative;
-}
-
-.main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__photo {
-  height: 100%;
 }
 
 .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__photo .main-screen__portrait {
@@ -79,17 +88,18 @@ header .header-logotypes__image {
 }
 
 .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__text-wrap .main-screen__name-surname {
-  width: 150px;
-  font-family: "Patua One", cursive;
+  width: 50%;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
   font-size: 2.3em;
   padding-bottom: 10px;
   padding-top: 15px;
 }
 
 .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__text-wrap .main-screen__profession {
-  width: 150px;
+  width: 50%;
   font-size: 1.2em;
-  border-top: 1px solid white;
+  border-top: 2px solid white;
   padding-top: 10px;
 }
 
@@ -133,10 +143,10 @@ header .header-logotypes__image {
 
 .common-block {
   width: 100%;
-  padding: 20px;
 }
 
 .common-block .common-block__item {
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,12 +157,15 @@ header .header-logotypes__image {
 }
 
 .common-block .common-block__item .common-block__title {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 11em;
+  height: 3em;
   font-size: 1.3em;
+  padding-top: 12px;
   padding-bottom: 2px;
-  border-bottom: 2px solid white;
+  padding-left: 30px;
+  background-size: cover;
 }
 
 .common-block .common-block__item .common-block__text {
@@ -243,40 +256,40 @@ header .header-logotypes__image {
   height: 50px;
 }
 
-@media (min-width: 520px) {
-  .background-left {
-    background-size: 270px;
+@media (min-width: 370px) {
+  header {
+    padding-left: 30px;
   }
-  .background-right {
-    background-size: 270px;
-  }
-  .main-screen {
-    background-position: 100% 80%;
+  header .header-logotypes__image {
+    width: 180px;
+    height: 60px;
   }
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text {
-    padding-left: 40px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 25px;
   }
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__text-wrap {
     width: 250px;
   }
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__text-wrap .main-screen__name-surname {
     width: 100%;
-    font-size: 3em;
+    font-size: 2.7em;
   }
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__text-wrap .main-screen__profession {
-    width: 100%;
-    font-size: 2em;
+    width: 90%;
+    font-size: 1.7em;
   }
   .main-screen .main-screen__wrapper .social-links__list {
-    padding-left: 20px;
+    padding-left: 15px;
   }
   .main-screen .main-screen__wrapper .social-links__list .social-links__icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
   }
-  .common-block {
-    padding: 40px;
+  .common-block .common-block__item {
+    padding: 30px;
   }
   .footer-logotypes {
     margin-left: 40px;
@@ -289,31 +302,14 @@ header .header-logotypes__image {
 }
 
 @media (min-width: 1024px) {
-  .background-left {
-    background-size: 24%;
-  }
-  .background-right {
-    background-size: 24%;
-  }
   header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 10vh;
-    width: 100%;
+    padding-left: 40px;
   }
   header .header-logotypes__image {
-    width: 55%;
-    height: 60%;
+    width: 200px;
+    height: 60px;
   }
   .main-screen {
-    height: 90vh;
     width: 100%;
   }
   .main-screen .main-screen__wrapper {
@@ -330,9 +326,6 @@ header .header-logotypes__image {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__photo {
-    height: 100%;
   }
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text {
     display: -webkit-box;
@@ -374,16 +367,21 @@ header .header-logotypes__image {
     padding: 80px;
     padding-top: 20px;
   }
+  .common-block .common-block__item {
+    padding: 40px;
+  }
   .common-block .common-block__item .common-block__title {
     font-size: 1.7em;
     margin-bottom: 20px;
   }
   .common-block .common-block__item .common-block__text {
-    font-size: 1.4em;
+    padding-left: 60px;
+    font-size: 1.2em;
     margin-top: 30px;
   }
   .common-block .common-block__item .common-block__list {
-    font-size: 1.8em;
+    font-size: 1.6em;
+    padding-left: 60px;
   }
   .common-block .common-block__item .common-block__list .skill-list .skill-list_item {
     line-height: 35px;
