@@ -1,4 +1,4 @@
-@import "./included/reset.scss";
+@import "./modules/_reset.scss";
 
 * {
   box-sizing: border-box;
@@ -201,5 +201,5 @@ header {
   }
 }
 
-@import "./included/tablet.scss";
-@import "./included/desktop.scss";
+@import "./modules/_tablet.scss";
+@import "./modules/_desktop.scss";
