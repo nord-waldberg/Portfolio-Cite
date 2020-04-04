@@ -24,14 +24,18 @@
             }
           }
         }
-        .social-links__list {
-          padding-left: 25px; 
-          .social-links__icon {
-            width: 45px;
-            height: 45px;
-            margin-right: 10px;
+        .main-screen__social-links {
+          justify-content: flex-end;
+          .social-links__list {
+            padding-right: 25px; 
+            .social-links__icon {
+              width: 45px;
+              height: 45px;
+              margin-right: 10px;
+            }
           }
         }
+        
       }
     }
     .common-block {

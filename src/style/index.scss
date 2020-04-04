@@ -131,7 +131,21 @@ header {
       font-size: 1.3em;
       margin-top: 15px;
       .skill-list {
-      line-height: 27px;
+      line-height: 30px;
+        #linux {
+          background-image: url(/build/resources/svg/linux.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: -3px center;
+          padding-left: 40px;
+        }
+        #windows {
+          background-image: url(/build/resources/svg/windows.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: -5px center;
+          padding-left: 40px;
+        }
         #html {
           background-image: url(/build/resources/svg/HTML.svg);
           background-repeat: no-repeat;
@@ -146,6 +160,12 @@ header {
         }
         #javascript {
           background-image: url(/build/resources/svg/JS.svg);
+          background-repeat: no-repeat;
+          background-position: left center;
+          padding-left: 40px;
+        }
+        #git {
+          background-image: url(/build/resources/svg/Git.svg);
           background-repeat: no-repeat;
           background-position: left center;
           padding-left: 40px;

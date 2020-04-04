@@ -185,7 +185,23 @@ header .header-logotypes__image {
 }
 
 .common-block .common-block__item .common-block__list .skill-list {
-  line-height: 27px;
+  line-height: 30px;
+}
+
+.common-block .common-block__item .common-block__list .skill-list #linux {
+  background-image: url(/build/resources/svg/linux.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: -3px center;
+  padding-left: 40px;
+}
+
+.common-block .common-block__item .common-block__list .skill-list #windows {
+  background-image: url(/build/resources/svg/windows.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: -5px center;
+  padding-left: 40px;
 }
 
 .common-block .common-block__item .common-block__list .skill-list #html {
@@ -204,6 +220,13 @@ header .header-logotypes__image {
 
 .common-block .common-block__item .common-block__list .skill-list #javascript {
   background-image: url(/build/resources/svg/JS.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+}
+
+.common-block .common-block__item .common-block__list .skill-list #git {
+  background-image: url(/build/resources/svg/Git.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
@@ -283,10 +306,15 @@ header .header-logotypes__image {
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__text-wrap .main-screen__profession {
     font-size: 1.5em;
   }
-  .main-screen .main-screen__wrapper .social-links__list {
-    padding-left: 25px;
+  .main-screen .main-screen__wrapper .main-screen__social-links {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
-  .main-screen .main-screen__wrapper .social-links__list .social-links__icon {
+  .main-screen .main-screen__wrapper .main-screen__social-links .social-links__list {
+    padding-right: 25px;
+  }
+  .main-screen .main-screen__wrapper .main-screen__social-links .social-links__list .social-links__icon {
     width: 45px;
     height: 45px;
     margin-right: 10px;
