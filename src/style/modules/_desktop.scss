@@ -42,18 +42,18 @@
                 font-size: 2.5vw;
               }
             }
-          }
-        }
-        .main-screen__social-links {
-          width: 100%;
-          height: 15%;
-          padding-left: 30px;
-          margin-top: 0px;
-          .social-links__list {
-            .social-links__link {}
-            .social-links__icon {
-              width: 55px;
-              height: 55px;
+            .main-screen__social-links {
+              width: 100%;
+              height: 15%;
+              padding-left: 30px;
+              margin-top: 0px;
+              .social-links__list {
+                .social-links__link {}
+                .social-links__icon {
+                  width: 55px;
+                  height: 55px;
+                }
+              }
             }
           }
         }
