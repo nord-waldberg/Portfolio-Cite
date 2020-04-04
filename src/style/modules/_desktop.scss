@@ -50,8 +50,8 @@
               .social-links__list {
                 .social-links__link {}
                 .social-links__icon {
-                  width: 55px;
-                  height: 55px;
+                  width: 47px;
+                  height: 47px;
                 }
               }
             }
@@ -60,14 +60,13 @@
       }
     }
     .common-block {
-      
-      padding-top: 20px;
       .common-block__item {
-        padding: 40px;
+        padding: 35px;
         .common-block__title {
           font-size: 1.7em;
           margin-bottom: 20px;
           margin-left: 60px;
+          padding-left: 45px;
         }
         .common-block__text {
           padding-left: 35px;
@@ -77,12 +76,14 @@
         .common-block__list {
           font-size: 1.6em;
           padding-left: 35px;
+          margin-top: 0px;
           .skill-list {
+            width: 60%;
             .skill-list_item {
               line-height: 35px;
             }
           }
-          .hobbies-list {
+          .hobbies-list {  
             margin-bottom: 20px;
             .hobbies-list_item {
               line-height: 35px;
@@ -99,4 +100,24 @@
         height: 70px;
       }
     }
+
+  .hobbies-background {
+    background-image: url(/build/resources/svg/hobbies.svg);
+    background-repeat: no-repeat;
+    background-position: -20px 50px;
+    background-size: contain;
+    
   }
+
+  .skills-background {
+    background-image: url(/build/resources/svg/skills.svg);
+    background-repeat: no-repeat;
+    background-position: right 70px;
+    background-size: contain;
+  }
+
+  .flex-text-right {
+    width: 60%;
+    align-self: flex-end;
+  }
+}

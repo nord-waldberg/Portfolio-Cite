@@ -79,7 +79,6 @@ header {
           }
         }
         .main-screen__social-links { 
-          height: 15%;
           margin-top: 10px;
           display: flex;
           align-items: center;
@@ -107,7 +106,7 @@ header {
 .common-block {
   width: 100%;
   .common-block__item {
-    padding: 20px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     .common-block__title {
@@ -129,7 +128,7 @@ header {
       font-size: 1.3em;
       margin-top: 15px;
       .skill-list {
-      line-height: 30px;
+      line-height: 32px;
         #linux {
           background-image: url(/build/resources/svg/linux.svg);
           background-size: contain;

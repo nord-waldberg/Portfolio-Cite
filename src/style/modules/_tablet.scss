@@ -10,12 +10,17 @@
     .main-screen {
       .main-screen__wrapper {
         .main-screen__text-photo-wrap { 
+          height: 100%;
           .main-screen__text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding-top: 10px;
-            padding-bottom: 25px;
             .main-screen__text-wrap {
               padding-left: 25px;
+              align-self: flex-start;
               .main-screen__name-surname {
+                padding-top: 0px;
                 font-size: 2.8em;
               }
               .main-screen__profession {
@@ -23,9 +28,8 @@
               }
             }
             .main-screen__social-links {
-              justify-content: flex-end;
               .social-links__list {
-                padding-right: 25px; 
+                padding-right: 20px; 
                 .social-links__icon {
                   width: 45px;
                   height: 45px;

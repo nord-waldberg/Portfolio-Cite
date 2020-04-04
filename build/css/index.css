@@ -109,7 +109,6 @@ header .header-logotypes__image {
 }
 
 .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__social-links {
-  height: 15%;
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,7 +150,7 @@ header .header-logotypes__image {
 }
 
 .common-block .common-block__item {
-  padding: 20px;
+  padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,7 +183,7 @@ header .header-logotypes__image {
 }
 
 .common-block .common-block__item .common-block__list .skill-list {
-  line-height: 30px;
+  line-height: 32px;
 }
 
 .common-block .common-block__item .common-block__list .skill-list #linux {
@@ -292,26 +291,35 @@ header .header-logotypes__image {
     width: 180px;
     height: 60px;
   }
+  .main-screen .main-screen__wrapper .main-screen__text-photo-wrap {
+    height: 100%;
+  }
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 10px;
-    padding-bottom: 25px;
   }
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__text-wrap {
     padding-left: 25px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__text-wrap .main-screen__name-surname {
+    padding-top: 0px;
     font-size: 2.8em;
   }
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__text-wrap .main-screen__profession {
     font-size: 1.5em;
   }
-  .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__social-links {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__social-links .social-links__list {
-    padding-right: 25px;
+    padding-right: 20px;
   }
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__social-links .social-links__list .social-links__icon {
     width: 45px;
@@ -397,19 +405,17 @@ header .header-logotypes__image {
     margin-top: 0px;
   }
   .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__social-links .social-links__list .social-links__icon {
-    width: 55px;
-    height: 55px;
-  }
-  .common-block {
-    padding-top: 20px;
+    width: 47px;
+    height: 47px;
   }
   .common-block .common-block__item {
-    padding: 40px;
+    padding: 35px;
   }
   .common-block .common-block__item .common-block__title {
     font-size: 1.7em;
     margin-bottom: 20px;
     margin-left: 60px;
+    padding-left: 45px;
   }
   .common-block .common-block__item .common-block__text {
     padding-left: 35px;
@@ -419,6 +425,10 @@ header .header-logotypes__image {
   .common-block .common-block__item .common-block__list {
     font-size: 1.6em;
     padding-left: 35px;
+    margin-top: 0px;
+  }
+  .common-block .common-block__item .common-block__list .skill-list {
+    width: 60%;
   }
   .common-block .common-block__item .common-block__list .skill-list .skill-list_item {
     line-height: 35px;
@@ -436,5 +446,22 @@ header .header-logotypes__image {
   .footer-logotypes .footer-logotypes__image {
     width: 80px;
     height: 70px;
+  }
+  .hobbies-background {
+    background-image: url(/build/resources/svg/hobbies.svg);
+    background-repeat: no-repeat;
+    background-position: -20px 50px;
+    background-size: contain;
+  }
+  .skills-background {
+    background-image: url(/build/resources/svg/skills.svg);
+    background-repeat: no-repeat;
+    background-position: right 70px;
+    background-size: contain;
+  }
+  .flex-text-right {
+    width: 60%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
 }
