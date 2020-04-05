@@ -35,6 +35,14 @@ a {
   background-color: #4A000A;
 }
 
+.text-link {
+  color: red;
+}
+
+.text-link:hover {
+  border-bottom: 1px solid red;
+}
+
 body {
   font-family: "Roboto Slab", serif;
   font-size: 100%;
@@ -109,7 +117,7 @@ header .header-logotypes__image {
 }
 
 .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__social-links {
-  margin-top: 10px;
+  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,7 +291,7 @@ header .header-logotypes__image {
   height: 50px;
 }
 
-@media (min-width: 380px) {
+@media (min-width: 550px) {
   header {
     padding-left: 30px;
   }
@@ -450,8 +458,8 @@ header .header-logotypes__image {
   .hobbies-background {
     background-image: url(/build/resources/svg/hobbies.svg);
     background-repeat: no-repeat;
-    background-position: -20px 50px;
-    background-size: contain;
+    background-position: 50px 10px;
+    background-size: 540px 540px;
   }
   .skills-background {
     background-image: url(/build/resources/svg/skills.svg);
@@ -460,7 +468,7 @@ header .header-logotypes__image {
     background-size: contain;
   }
   .flex-text-right {
-    width: 60%;
+    width: 50%;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }

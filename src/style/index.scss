@@ -24,6 +24,14 @@ $text-font: 'Roboto Slab', serif;
   
 }
 
+.text-link {
+  color: red;
+  &:hover {
+   border-bottom: 1px solid red; 
+
+  }
+}
+
 body {
   font-family: $text-font;
   font-size: 100%;
@@ -79,7 +87,7 @@ header {
           }
         }
         .main-screen__social-links { 
-          margin-top: 10px;
+          margin-top: 15px;
           display: flex;
           align-items: center;
           .social-links__list {

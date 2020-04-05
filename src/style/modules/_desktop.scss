@@ -104,8 +104,8 @@
   .hobbies-background {
     background-image: url(/build/resources/svg/hobbies.svg);
     background-repeat: no-repeat;
-    background-position: -20px 50px;
-    background-size: contain;
+    background-position: 50px 10px;
+    background-size: 540px 540px;
     
   }
 
@@ -117,7 +117,7 @@
   }
 
   .flex-text-right {
-    width: 60%;
+    width: 50%;
     align-self: flex-end;
   }
 }
