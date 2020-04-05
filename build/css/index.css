@@ -16,18 +16,37 @@ a {
   text-decoration: none;
 }
 
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: #121212;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .background-red {
-  background-image: url(/build/resources/svg/gray_line.svg);
+  background-image: url(../resources/svg/gray_line.svg);
   background-repeat: no-repeat;
 }
 
 .background-grey {
-  background-image: url(/build/resources/svg/red_line.svg);
+  background-image: url(../resources/svg/red_line.svg);
   background-repeat: no-repeat;
 }
 
@@ -140,9 +159,11 @@ header .header-logotypes__image {
 .main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__social-links .social-links__list .social-links__link {
   display: block;
   margin-right: 15px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
-.main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__social-links .social-links__list .social-links__link .social-links__icon:hover {
+.main-screen .main-screen__wrapper .main-screen__text-photo-wrap .main-screen__text .main-screen__social-links .social-links__list .social-links__link:hover .social-links__icon {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   -webkit-transition: 100ms;
@@ -195,7 +216,7 @@ header .header-logotypes__image {
 }
 
 .common-block .common-block__item .common-block__list .skill-list #linux {
-  background-image: url(/build/resources/svg/linux.svg);
+  background-image: url(../resources/svg/linux.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: -3px center;
@@ -203,7 +224,7 @@ header .header-logotypes__image {
 }
 
 .common-block .common-block__item .common-block__list .skill-list #windows {
-  background-image: url(/build/resources/svg/windows.svg);
+  background-image: url(../resources/svg/windows.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: -5px center;
@@ -211,63 +232,63 @@ header .header-logotypes__image {
 }
 
 .common-block .common-block__item .common-block__list .skill-list #html {
-  background-image: url(/build/resources/svg/HTML.svg);
+  background-image: url(../resources/svg/HTML.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
 }
 
 .common-block .common-block__item .common-block__list .skill-list #css {
-  background-image: url(/build/resources/svg/CSS.svg);
+  background-image: url(../resources/svg/CSS.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
 }
 
 .common-block .common-block__item .common-block__list .skill-list #javascript {
-  background-image: url(/build/resources/svg/JS.svg);
+  background-image: url(../resources/svg/JS.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
 }
 
 .common-block .common-block__item .common-block__list .skill-list #git {
-  background-image: url(/build/resources/svg/Git.svg);
+  background-image: url(../resources/svg/Git.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
 }
 
 .common-block .common-block__item .common-block__list .skill-list #sass {
-  background-image: url(/build/resources/svg/Sass.svg);
+  background-image: url(../resources/svg/Sass.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
 }
 
 .common-block .common-block__item .common-block__list .skill-list #photoshop {
-  background-image: url(/build/resources/svg/Ps.svg);
+  background-image: url(../resources/svg/Ps.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
 }
 
 .common-block .common-block__item .common-block__list .skill-list #illustrator {
-  background-image: url(/build/resources/svg/Ai.svg);
+  background-image: url(../resources/svg/Ai.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
 }
 
 .common-block .common-block__item .common-block__list .skill-list #lightroom {
-  background-image: url(/build/resources/svg/Lr.svg);
+  background-image: url(../resources/svg/Lr.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
 }
 
 .common-block .common-block__item .common-block__list .skill-list #figma {
-  background-image: url(/build/resources/svg/Figma.svg);
+  background-image: url(../resources/svg/Figma.svg);
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
@@ -456,13 +477,13 @@ header .header-logotypes__image {
     height: 70px;
   }
   .hobbies-background {
-    background-image: url(/build/resources/svg/hobbies.svg);
+    background-image: url(../resources/svg/hobbies.svg);
     background-repeat: no-repeat;
     background-position: 50px 10px;
     background-size: 540px 540px;
   }
   .skills-background {
-    background-image: url(/build/resources/svg/skills.svg);
+    background-image: url(../resources/svg/skills.svg);
     background-repeat: no-repeat;
     background-position: right 70px;
     background-size: contain;

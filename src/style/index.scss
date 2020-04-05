@@ -1,4 +1,5 @@
 @import "./modules/_reset.scss";
+@import "./modules/_preloader.scss";
 
 * {
   box-sizing: border-box;
@@ -10,12 +11,12 @@ $main-font: 'Roboto Slab', serif;
 $text-font: 'Roboto Slab', serif;
 
 .background-red {
-  background-image: url(/build/resources/svg/gray_line.svg);
+  background-image: url(../resources/svg/gray_line.svg);
   background-repeat: no-repeat;
 }
 
 .background-grey {
-  background-image: url(/build/resources/svg/red_line.svg);
+  background-image: url(../resources/svg/red_line.svg);
   background-repeat: no-repeat;
 }
 
@@ -27,8 +28,7 @@ $text-font: 'Roboto Slab', serif;
 .text-link {
   color: red;
   &:hover {
-   border-bottom: 1px solid red; 
-
+    border-bottom: 1px solid red; 
   }
 }
 
@@ -97,7 +97,11 @@ header {
             .social-links__link {
               display: block;
               margin-right: 15px;
-              .social-links__icon:hover {
+              -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+              -webkit-tap-highlight-color: transparent;
+            }
+            .social-links__link:hover {
+              .social-links__icon {
                 transform: scale(1.5);
                 transition: 100ms;
                 animation-timing-function: ease-in;
@@ -138,69 +142,69 @@ header {
       .skill-list {
       line-height: 32px;
         #linux {
-          background-image: url(/build/resources/svg/linux.svg);
+          background-image: url(../resources/svg/linux.svg);
           background-size: contain;
           background-repeat: no-repeat;
           background-position: -3px center;
           padding-left: 40px;
         }
         #windows {
-          background-image: url(/build/resources/svg/windows.svg);
+          background-image: url(../resources/svg/windows.svg);
           background-size: contain;
           background-repeat: no-repeat;
           background-position: -5px center;
           padding-left: 40px;
         }
         #html {
-          background-image: url(/build/resources/svg/HTML.svg);
+          background-image: url(../resources/svg/HTML.svg);
           background-repeat: no-repeat;
           background-position: left center;
           padding-left: 40px;
         }
         #css {
-          background-image: url(/build/resources/svg/CSS.svg);
+          background-image: url(../resources/svg/CSS.svg);
           background-repeat: no-repeat;
           background-position: left center;
           padding-left: 40px; 
         }
         #javascript {
-          background-image: url(/build/resources/svg/JS.svg);
+          background-image: url(../resources/svg/JS.svg);
           background-repeat: no-repeat;
           background-position: left center;
           padding-left: 40px;
         }
         #git {
-          background-image: url(/build/resources/svg/Git.svg);
+          background-image: url(../resources/svg/Git.svg);
           background-repeat: no-repeat;
           background-position: left center;
           padding-left: 40px;
         }
         #sass {
-          background-image: url(/build/resources/svg/Sass.svg);
+          background-image: url(../resources/svg/Sass.svg);
           background-repeat: no-repeat;
           background-position: left center;
           padding-left: 40px; 
         }
         #photoshop {
-          background-image: url(/build/resources/svg/Ps.svg);
+          background-image: url(../resources/svg/Ps.svg);
           background-repeat: no-repeat;
           background-position: left center;
           padding-left: 40px; 
         }
         #illustrator {
-          background-image: url(/build/resources/svg/Ai.svg);
+          background-image: url(../resources/svg/Ai.svg);
           background-repeat: no-repeat;
           background-position: left center;
           padding-left: 40px; 
         }
         #lightroom {
-          background-image: url(/build/resources/svg/Lr.svg);
+          background-image: url(../resources/svg/Lr.svg);
           background-repeat: no-repeat;
           background-position: left center;
           padding-left: 40px; 
         }
         #figma {
-          background-image: url(/build/resources/svg/Figma.svg);
+          background-image: url(../resources/svg/Figma.svg);
           background-repeat: no-repeat;
           background-position: left center;
           padding-left: 40px; 
